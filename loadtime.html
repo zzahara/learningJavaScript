@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<HEAD>
+	<!-- LOAD TIME javascript program from online (PART I) -->
+    <script type="text/javascript">
+        //<!-- Begin
+        /* This script and many more are available free online at
+        The JavaScript Source!! http://javascript.internet.com
+        Created by: Abraham Joffe :: http://www.abrahamjoffe.com.au/ */
+
+        var startTime=new Date();
+
+        function currentTime(){
+          var a=Math.floor((new Date()-startTime)/100)/10;
+          if (a%1==0) a+=".0";
+          document.getElementById("endTime").innerHTML=a;
+        }
+
+        var loopTime=setInterval("currentTime()",100);
+        window.onload=function(){
+          clearTimeout(loopTime);
+        }
+
+        // End -->
+      </script>
+
+	
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="generator" content="Adobe GoLive" />
+		<title>Load Time</title>
+		<style type="text/css" media="screen"><!--
+			#outline { position: relative; height: 800px; width: 800px; margin: 18px auto 0; border: solid 1px #999; }
+			#caption { width: 260px; left: 48px; top: 318px; position: absolute; visibility: visible; }
+			#text { left: 336px; top: 318px; position: absolute; width: 400px; visibility: visible; margin-top: 10px; }
+			#title { width: 800px; top: 100px; position: absolute; visibility: visible; }
+			p { color: #666; font-size: 16px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: normal; margin-top: 0; }
+			h1 { color: #778fbd; font-size: 20px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: 500; line-height: 32px; margin-top: 4px; }
+			h2 { color: #778fbd; font-size: 18px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: normal; margin: 0.83em 0 0; }
+			h3 { color: #666; font-size: 60px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: bold; text-align: center; letter-spacing: -1px; width: auto; }
+			h4 { font-weight: bold; text-align: center; margin: 1.33em 0; }
+			a { color: #666; text-decoration: underline; }
+		--></style>
+	</HEAD>
+
+	<BODY>
+		<div id="outline">
+			<img src="images/gradient.jpg" alt="" height="304" width="800" border="0" />
+			<div id="title">
+				<h3>Testing Load Time Javascript program</h3>
+			</div>
+
+            <!-- Adding images to make load time slower -->
+            <br><br><br>
+            
+			<img src="http://z.about.com/d/dallas/1/0/M/1/-/-/BlanketFlower.JPG" alt="" height="304" width="800" border="0" /><br>
+			<img src="http://z.about.com/d/dallas/1/0/M/1/-/-/BlanketFlower.JPG" alt="" height="304" width="800" border="0" /><br>
+			<img src="http://z.about.com/d/dallas/1/0/M/1/-/-/BlanketFlower.JPG" alt="" height="304" width="800" border="0" /><br>
+			<img src="http://layoutcms.com/demo/images/graphics/flower/flower1.jpg" alt="" height="304" width="800" border="0" /><br>
+            
+            <!--
+			<script>
+            var i = 0;
+            for (i=0; i <= 100; i++) {
+                document.writeln("<img src=\"http://layoutcms.com/demo/images/graphics/flower/       flower1.jpg\" alt=\"\" height=\"304\" width=\"800\" border=\"0\"/><br>");
+
+            }
+
+			</script> -->
+
+			<!-- LOAD TIME javascript program from online (PART II) -->
+            <br><br><br>
+			<center>
+            <script type="text/javascript">
+            //<!-- Begin
+              document.write('This page took <span id="endTime">0.0</span> seconds to load.');
+            // End -->
+            </script>
+            </center>
+
+            <p><center>
+            <font face="arial, helvetica" size"-2">Free JavaScripts provided<br>
+            by <a href="http://javascriptsource.com";>The JavaScript Source</a></font>
+            </center><p>
+
+
+			</div>
+			
+		</div>
+		
+	</BODY>
+
+</html>

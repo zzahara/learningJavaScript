@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- LOAD TIME javascript program from online (PART I) -->
+    <script type="text/javascript">
+        //<!-- Begin
+        /* This script and many more are available free online at
+        The JavaScript Source!! http://javascript.internet.com
+        Created by: Abraham Joffe :: http://www.abrahamjoffe.com.au/ */
+
+        var startTime=new Date();
+        
+
+        function currentTime(){
+          var a=(new Date()-startTime);
+          a = a + " ";
+          //var a=((new Date()-startTime)/100);
+          //if (a%1==0) a+=".0";
+          document.getElementById("endTime").innerHTML = a;
+        }
+
+        window.onload = function(){
+          currentTime();
+        }
+
+        /*
+        var loopTime=setInterval("currentTime()",100);
+        window.onload=function(){
+          clearTimeout(loopTime);
+          currentTime();
+        } */
+
+        // End -->
+      </script>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+<title>Firebug</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/styles/screen.css?v2">
+
+<!--[if gte IE 7]>
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/styles/screen.css?v2">
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/styles/ie.css?v1">
+<![endif]-->
+
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.mousewheel-3.0.2.js"></script>
+<script type="text/javascript" src="/js/fancybox.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+			$('a.view').fancybox({
+			 'transitionIn' : 'elastic',
+			 'transitionOut' : 'elastic',
+			 'autoScale' : false,
+			 'centerOnScroll' : true
+			});
+			$('a.lightbox').fancybox({
+			 'transitionIn' : 'elastic',
+			 'transitionOut' : 'elastic',
+			 'hideOnContentClick' : true
+			});
+			$('a#whatsnew-show').click(function() {
+                $('#whatsnew15').toggle('slow');
+                return false;
+            });
+});
+</script>
+
+</head>
+
+<body id="home">
+<div id="wrap" class="group">
+
+<div id="header" class="group">
+
+<ul id="nav">
+<li><a href="/whatisfirebug">What is Firebug?</a>
+<span>Introduction and Features</span></li>
+<li><a href="http://getfirebug.com/wiki/">Resources</a>
+<span>Documentation wiki, FAQ, and other Firebug lore</span></li>
+<li><a href="/community">Community</a><span>Discussion forums and lists</span></li>
+<li><a href="/getinvolved">Get Involved</a><span>Hack the code, create plugins</span></li>
+</ul>
+
+<div id="logo-install" class="group">
+
+<div id="logo">
+<a href="/"></a>
+<h1>Firebug</h1>
+<h2>Web Development Evolved.</h2>
+</div>
+
+<div id="install" class="group">
+<p><a onclick="window.location.href='https://addons.mozilla.org/services/install.php?addon_id=1843&src=external-getfirebug'; return false;" href="https://addons.mozilla.org/en-US/firefox/downloads/latest/1843/addon-1843-latest.xpi?src=external-getfirebug">Install Firebug For Firefox</a>
+<span>100% free and open source</span></p>
+<ul>
+<li><a href="/downloads">Other Versions</a></li>
+<li><a href="/firebuglite">Firebug Lite</a></li>
+<li><a href="/downloads#extensions">Extensions</a></li>
+</ul>
+</div>
+
+</div> <!-- /END logo-install -->
+
+
+    <div id="promo" class="group">
+    
+    <div id="boasting">
+    <h2>The most popular and powerful web development tool</h2>
+    	<ul>
+		<li>Inspect <span class="caps">HTML</span> and modify style and layout in real-time</li>
+		<li>Use the most advanced JavaScript debugger available for any browser</li>
+		<li>Accurately analyze network usage and performance</li>
+		<li>Extend Firebug and add features to make Firebug even more powerful</li>
+		<li>Get the information you need to get it done with Firebug.</li>
+	</ul>
+    <p class="moreinfo"><a href="/whatisfirebug">More Features &raquo;</a></p>
+    </div>
+    
+    <div id="screencast">
+    <a href="#screencast-view" class="view"><img src="/perch/resources/1267205878screencast.png" alt="Screencast" /></a><h3>Introduction to Firebug</h3>
+    <p>Chief Firebug pyroentomologist Rob Campbell gives a quick introduction to Firebug.<br><a href="#screencast-view" class="view">Watch now&nbsp;&raquo;</a></p>
+    <h4>Other Firebug screencasts</h4>
+    <ul>
+    <li>Check back for more Firebug screencasts, coming soon.</li>
+<!-- <li><a href="#">Dolor sit amet</a></li> -->    </ul>
+    </div>
+    
+    <div style="display:none;">
+    <div id="screencast-view"><video width="601" height="339" poster="/img/screencast.jpg" controls>
+<source src="video/Intro2FB.ogv" type="video/ogg" />
+<source src="video/Intro2FB.mp4" type="video/mp4" /><!--[if gt IE 6]>
+<object width="601" height="339" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"><!
+[endif]--><!--[if !IE]><!-->
+<object width="601" height="339" type="video/quicktime" data="video/Intro2FB.mp4">
+<!--<![endif]-->
+<param name="src" value="video/Intro2FB.mp4" />
+<param name="showlogo" value="false" />
+<object width="601" height="339" type="application/x-shockwave-flash"
+	data="http://vimeo.com/moogaloop.swf?clip_id=8580584&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1">
+	<param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=8580584&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" />
+	<img src="/img/screencast.jpg" width="601" height="339" alt="Introduction to Firebug"
+	     title="Introduction to Firebug - please download video below" />
+</object><!--[if gt IE 6]><!--></object><!--<![endif]-->
+</video>
+<p>Download Video: <a href="video/Intro2FB.mp4">High Quality “MP4”</a> | <a href="video/Intro2FB.ogv">High Quality “OGG”</a></p></div>
+    </div>
+    
+    </div> <!-- END promo -->
+
+    <div class="bigfirebug"></div>
+    
+
+</div> <!-- /END header -->
+
+<div id="features-wrap">
+
+<div id="features" class="group">
+
+<div class="feature1 group">
+	<dl>
+		<dt><a href="/html"><img src="img/icons/inspect.png" width="32" height="32"><span>Inspect</span></a></dt>
+		<dd>Pinpoint an element in a webpage with ease and precision.</dd>
+	</dl>
+	<dl>
+		<dt><a href="/commandline"><img src="img/icons/log.png" width="32" height="32"><span>Log</span></a></dt>
+		<dd>Send messages to the console direct from your webpage through Javascript.</dd>
+	</dl>
+	<dl>
+		<dt><a href="/javascript"><img src="img/icons/profile.png" width="32" height="32"><span>Profile</span></a></dt>
+		<dd>Measure your Javascript performance in the Console's Profiler.</dd>
+	</dl>
+</div>
+
+<div class="feature2">
+	<dl>
+		<dt><a href="/errors"><img src="img/icons/debug.png" width="32" height="32"><span>Debug</span></a></dt>
+		<dd>Step-by-step interactive debugging in a visual environment.</dd>
+	</dl>
+	<dl>
+		<dt><a href="/network"><img src="img/icons/analyze.png" width="32" height="32"><span>Analyze</span></a></dt>
+		<dd>Look at detailed measurements of your site's network activity.</dd>
+	</dl>
+	<dl>
+		<dt><a href="/layout"><img src="img/icons/layout.png" width="32" height="32"><span>Layout</span></a></dt>
+		<dd>Tweak and position HTML elements with CSS and the Layout panels.</dd>
+	</dl>
+</div>
+
+</div> <!-- /END features -->
+
+</div> <!-- /END features-wrap -->
+
+<div id="secondary" class="group">
+
+<div id="contentarea" class="group">
+
+<div id="content" class="group">
+<h2 class="heading">Recent news</h2>
+<div id="blog">
+
+
+<div class="post">
+<h2><a href="http://blog.getfirebug.com/2010/05/24/firebuglite1-3-0/" rel="bookmark" title="Permanent Link to Firebug Lite 1.3.0">Firebug Lite 1.3.0</a></h2>
+<div class="postDate">24 May 2010 | 4:44 pm  </div>
+
+<div class="entry">
+<p>Pedro Simonetti Garcia <a href="http://groups.google.com/group/firebug-working-group/browse_frm/thread/8c1a832bb73ed2a8">announces</a> the release of <a href="http://getfirebug.com/firebuglite">Firebug Lite 1.3.0</a>!  This in-page version of the Firebug concept offers many of the Firebug features popular in Firebug for Firefox, but it works in many browsers.  The  new release improves the user interface, deepens the implementation of CSS support, and improves the inspector and console panel.</p>
+<p>With 1.3 <a href="http://twitter.com/pedro_simonetti">Pedro Simonetti</a> began integrating the Firebug Lite and Firebug for Firefox source code.  Next we divide Firebug for Firefox into user-interface (front end) and information extraction (back end). Then we merge Firebug Lite and the new front end. That gives us a common front end interface for Firefox multi-process, <a href="https://wiki.mozilla.org/Mobile/Fennec/Extensions#Debug_Tools">Fennec</a> mobile web, Firefox with <a href="https://wiki.mozilla.org/Platform/JSDebugv2">JSDebugv2</a>, and cross browser. So in one master stroke Pedro Simonetti enhances Firebug Lite and sets us on a new course for Firebug development!</p>
+<p>Of course the Firefox version of Firebug has many more features and we keep moving it forward. Ultimately we hope this trend continues: Firebug gets stronger on all browsers but the Firefox version keeps pushing out ahead.</p>
+<p>jjb</p>
+<p><a href="http://groups.google.com/group/firebug/browse_frm/thread/baf78cb57c340344">Please followup in the newsgroup.</a></p>
+<div>http://groups.google.com/group/firebug/browse_frm/thread/baf78cb57c340344</div></div>
+
+<p class="postmetadata">  <a href="http://blog.getfirebug.com/2010/05/24/firebuglite1-3-0/#respond" title="Comment on Firebug Lite 1.3.0">Comment on this entry &#187;</a></p>
+</div>
+
+<div class="post">
+<h2><a href="http://blog.getfirebug.com/2010/05/21/firebug-1-6a11/" rel="bookmark" title="Permanent Link to Firebug 1.6a11">Firebug 1.6a11</a></h2>
+<div class="postDate">21 May 2010 | 10:53 pm  </div>
+
+<div class="entry">
+<p>getfirebug.com has <a href="http://getfirebug.com/releases/firebug/1.6X/firebug-1.6X.0a11.xpi">Firebug 1.6X.0a11</a>. This release is dedicated to Sebasitan Zartner who recently joined the Firebug Working Group and has been working on our bug list.</p>
+<ul>
+<li>Honza <a href="http://www.softwareishard.com/blog/firebug/tabular-logs-in-firebug/">implemented</a> <strong>console.table</strong> so source like this:</li>
+<blockquote><p><code> </code></p>
+<pre>var family = {};
+family.header = ["First", "Last", "Age", "Desc"];
+family.mother = new Person("Susan", "Doyle", 32);
+family.father = new Person("John", "Doyle", 33);
+family.daughter = new Person("Lily", "Doyle", 5);
+family.son = new Person("Mike", "Doyle", 8);
+family.mother.desc = "mother";
+family.father.desc = "father";
+
+console.table(family);
+</pre>
+<p>produces:</p>
+<p><a href="http://blog.getfirebug.com/wp-content/uploads/2010/05/console-table.png"><img class="alignnone size-full wp-image-775" title="console-table" src="http://blog.getfirebug.com/wp-content/uploads/2010/05/console-table.png" alt="" width="619" height="152" /></a></p>
+<p>More examples are available in our <a href="https://getfirebug.com/tests/content/console/api/table.html">console/api/table test page.</a> This feature was <a href="https://bugs.webkit.org/show_bug.cgi?id=38664">suggested by Patrick Mueller</a> who works on webkit based on a similar feature implemented in FirePHP by Christoph Dorn.</p></blockquote>
+<li><strong>Disabling break on next error and  <code>debugger;</code> keywords.</strong> When you hit these in the debugger you now have the option of replacing them with a disabled breakpoint. The debugger will not break at these lines until you remove the disabled breakpoint:<a href="http://blog.getfirebug.com/wp-content/uploads/2010/05/disable-debugger-keyword.png"><img class="alignnone size-full wp-image-776" title="disable-debugger-keyword" src="http://blog.getfirebug.com/wp-content/uploads/2010/05/disable-debugger-keyword.png" alt="" width="684" height="213" /></a></li>
+<li>You can also see the <a href="http://www.softwareishard.com/blog/firebug/firebug-16-back-and-forward-navigation/">forward and back arrows</a> Honza added in 1.6a10 in these screenshots.</li>
+</ul>
+<p>Of course we have <a href="http://code.google.com/p/fbug/issues/list?can=1&amp;q=label:fixed-1.6a11">bug fixes</a>, mostly around problems I created with the persistent breakpoints feature.</p>
+<p>jjb</p>
+<p>Please post comments in the newsgroup.</p></div>
+
+<p class="postmetadata">  <a href="http://blog.getfirebug.com/2010/05/21/firebug-1-6a11/#respond" title="Comment on Firebug 1.6a11">Comment on this entry &#187;</a></p>
+</div>
+
+<div class="post">
+<h2><a href="http://blog.getfirebug.com/2010/05/06/firebug-1-5-4-on-amo/" rel="bookmark" title="Permanent Link to Firebug 1.5.4 on AMO">Firebug 1.5.4 on AMO</a></h2>
+<div class="postDate">6 May 2010 | 3:59 pm  </div>
+
+<div class="entry">
+<p><strong>Firebug 1.5.4</strong> has been available on <a href="http://getfirebug.com/releases/firebug/1.5/">getfirebug.com</a> for a while and since we have received only positive feedback, it&#8217;s now available on <a href="https://addons.mozilla.org/en-US/firefox/addon/1843/">addons.mozilla.org</a> too.</p>
+<p>This minor update fixes two annoying bugs. One is related to <a href="http://code.google.com/p/fbug/issues/detail?id=2788">script truncation</a> problem and the other to an <a href="http://code.google.com/p/fbug/issues/detail?id=2942">options menu</a> (the mini drop down menu available for the selected panel tab).</p>
+<p>Special thanks to Mark Rawling for providing test cases and help!</p>
+<p>Honza</p>
+<p><a href="http://groups.google.com/group/firebug/browse_thread/thread/bf0b36cc94193b35">Please followup in the newsgroup.</a></p></div>
+
+<p class="postmetadata">  <a href="http://blog.getfirebug.com/2010/05/06/firebug-1-5-4-on-amo/#respond" title="Comment on Firebug 1.5.4 on AMO">Comment on this entry &#187;</a></p>
+</div>
+
+<h3>Read more blog posts on the <a href="http://blog.getfirebug.com/">Firebug weblog &raquo;</a></h3>
+
+</div> <!-- /END blog -->
+
+</div> <!-- /END content -->
+
+<div id="links">
+<h2 class="heading">Links and Elsewhere</h2>
+
+<!-- Delicious -->
+<div id="delicious-posts-firebug" class="delicious-posts">
+<h2 class="delicious-banner sidebar-title">Firebug around the web</h2>
+<script type="text/javascript" src="http://feeds.delicious.com/v2/js/firebugnews?count=10&amp;title=&amp;sort=date&amp;extended"></script>
+</div>
+
+</div> <!-- /END links -->
+
+</div> <!-- /END contentarea -->
+
+</div> <!-- /END secondary -->
+
+<div id="footer" class="group">
+
+<div class="nav">
+<h3>Firebug</h3>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/downloads">Downloads</a></li>
+<li><a href="http://getfirebug.com/wiki/">Resources</a></li>
+<li><a href="/whatisfirebug">What is Firebug</a>
+</li>
+<li><a href="/community">Community</a></li>
+<li><a href="/getinvolved">Get Involved</a></li>
+<li><a href="http://blog.getfirebug.com/">Blog</a></li>
+</ul>
+</div>
+
+<div id="legal">
+<div id="copyright">
+<img src="/img/mozilla-logo.png" width="41" height="31" alt="Firefox Logo" />
+<p><span>Copyright &copy; 2005-2010 Mozilla.</span> All rights reserved.</p>
+
+<!-- LOAD TIME javascript program from online (PART II) -->
+    <br><br><br>
+    <script type="text/javascript">
+    //<!-- Begin
+      document.write('This page took <span id="endTime">0.0</span> milliseconds to load.');
+    // End -->
+    </script>
+
+</div>
+
+
+<ul>
+<li><a href="http://www.mozilla.com/en-US/privacy-policy.html">Privacy Policy</a></li>
+<li><a href="http://www.mozilla.com/en-US/about/legal.html">Legal Notices</a></li>
+
+</ul>
+
+</div>
+<div class="bigfirebug"></div>
+
+
+</div> <!-- /END footer -->
+</div> <!-- /END wrap -->
+
+    
+</body>
+</html>
