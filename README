@@ -1,0 +1,18 @@
+helloworld:
+
+My first experience with JavaScript was writing a hello world program.
+
+ex1:
+
+The first JavaScript exercise from http://www.nvcc.edu/home/wpegram/Javascript/javascript_exercises.html. ex1.html loads the JavaScript from the ex1.js file.
+
+loadtime:
+
+Experimented with some JavaScript that measures the load time of a page (found online http://www.techlists.org/archives/web/javascript/2005-07/msg00169.shtml).
+
+Firebug:
+
+Implemented the load time code in the Firebug homepage. I compared the calculated time with the time given by Firebug.
+
+
+
